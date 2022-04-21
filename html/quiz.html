@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title></title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+  <script src="../javascript/quiz.js"></script>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <form>
+    <h1>Quiz</h1>
+    <label for="Nom">Nom: </label><input type="text" id="txtNom"/><br> 
+    <br>
+    <label for="selectLangage">1. Quelle langage de code utilisez-vous pour changer le style du text d'une page web?</label><br>
+    <select id="selLang">
+      <option value="html">HTML</option>
+      <option value="js">JavaScript</option>
+      <option value="css">CSS</option>
+      <option value="python">Python</option>
+    </select>
+    <div id=wrongSel></div>
+    <br>
+    <label for="checkboxLangue">2. Quelle caractères utilisons-nous pour les commentaires en JavaScript?</label><br>
+    <input type="checkbox" id="checkboxLangue" name="caracteres" value="doubleSlash">//<br>
+    <input type="checkbox" id="checkboxLangue" name="caracteres" value="slashStar">/*<br>
+    <input type="checkbox" id="checkboxLangue" name="caracteres" value="bSlashN">\n<br>
+    <input type="checkbox" id="checkboxLangue" name="caracteres" value="doubleBSlash">\\<br>
+    <div id=wrongChar></div>
+    <br>
+    <label for="radioimages">3. JavaScript est utilisé pour ajouter des images sur une page web.</label><br>
+    <input type="radio" name="tORf" value="vrai">Vrai
+    <input type="radio" name="tORf" value="faux">Faux
+    <div id=wrongTorF></div>
+    <br>
+    <input type="button" id="bouttonSoumettre" onclick="soumettre()"  value="Soumettre"><br>
+  <div id="divAffiche"></div>
+  </form>
+<p><a id="retour" href= "../index.html">Retour</a></p>
+</body>
+</html>
