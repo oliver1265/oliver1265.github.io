@@ -1,0 +1,228 @@
+<!--Ce code crée une page web pour acheter des articles de ligne comme par exemples: des chapeaux, des chandails, des hoodies, des pantalons et/ou des bas. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fondamentaux Frais</title>
+  <link href="../styleFF.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--Nom de l'entreprise-->
+  <h1>Fondamentaux Frais</h1>
+<!--Description pour l'utilisateur-->
+  <h4>Bienvenue au magasin en ligne, Fondamentaux Frais!<br>Ici vous pouvez acheter des articles de vêtements fondamentaux pour votre garde-robe!<br> Commencez par choisir un ou des article(s), ensuite choisez votre location,<br>votre mode de transport désiré et finaliser votre achat.<br> Après que vous avez entré le montant d'argent avec lequel vous désiré payer,<br> vous allez reçevoir le montant d'argent de rechange et votre reçu.</h4>
+  <!--https://coder-coder.com/display-divs-side-by-side/-->
+<!--Ceci crée deux espace côte à côte.-->
+  <div class="float-container" id="affiche">
+    <div class="float-child">
+<!--Ceci est la première page (gauche)-->
+      <div class="page1">
+<!--Tableau pour les items-->
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantité</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+<!--walmart.ca/en/ip/Plain-Baseball-Cap-Blank-Hat-with-Solid-Color-and-Adjustable-Black/23XX59X845MF -->
+                <img src="../images/chapeau.jpeg">
+                <br>
+                Chapeau</td>
+              <td>
+<!--Ceci est un select pour choisir la quantité -->
+                <label for="quantite1">Qté:</label>
+                <select id="quantite1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+              </td>
+              <td>
+<!--Ceci est un checkbox pour choisir l'item -->
+                <label for="choix1">Acheter:</label>
+                <input type="checkbox" id="choix1" name="choix" /><br>
+                14,99$
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!--https://unsplash.com/s/photos/plain-shirt-->
+                <img src="../images/chandail.jpeg">
+                <br>
+                Chandail</td>
+              <td>
+<!--Ceci est un select pour choisir la quantité -->
+                <label for="quantite2">Qté:</label>
+                <select id="quantite2">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+              </td>
+              <td>
+<!--Ceci est un checkbox pour choisir l'item -->
+                <label for="choix2">Acheter:</label>
+                <input type="checkbox" id="choix2" name="choix2" value="1"><br>
+                19,99$
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!--https://www.jackjones.com/de/en/jj/clothing/sweatshirts/hoodies/plain-hoodie-12161145.html-->
+                <img src="../images/hoodie.jpeg">
+                <br>
+                Hoodie</td>
+              <td>
+<!--Ceci est un select pour choisir la quantité -->
+                <label for="quantite3">Qté:</label>
+                <select id="quantite3">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+              </td>
+              <td>
+<!--Ceci est un checkbox pour choisir l'item -->
+                <label for="choix3">Acheter:</label>
+                <input type="checkbox" id="choix3" name="choix3" value="2"><br>
+                49,99$
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!--https://homiesmarbella.com/products/sample-cargo-pants-plain-size-m-1-->
+                <img src="../images/pantalon.jpeg">
+                <br>                
+                Pantalon</td>
+              <td>
+<!--Ceci est un select pour choisir la quantité -->
+                <label for="quantite4">Qté:</label>
+                <select id="quantite4">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+              </td>
+              <td>
+<!--Ceci est un checkbox pour choisir l'item -->
+                <label for="choix4">Acheter:</label>
+                <input type="checkbox" id="choix4" name="choix4" value="3"><br>
+                29,99$
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!--https://nymag.com/strategist/article/best-white-socks-for-women.html-->
+                <img src="../images/bas.jpeg">
+                <br>
+                Bas</td>
+              <td>
+<!--Ceci est un select pour choisir la quantité -->
+                <label for="quantite5">Qté:</label>
+                <select id="quantite5">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+              </td>
+              <td>
+<!--Ceci est un checkbox pour choisir l'item -->
+                <label for="choix5">Acheter:</label>
+                <input type="checkbox" id="choix5" name="choix5" value="4"><br>
+                4,99$
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<!--Boutton de retour-->
+        <br><br>
+        <h4><a id="retour" href= "../index.html">Retour</a></h4>
+      </div>
+    </div>
+<!--Ceci est la deuxième page (à la droite)-->
+    <div class="float-child">
+      <div class="page2">
+        <p>
+<!--Ceci crée un radio button pour trouver où livrer-->
+          <label for="location">Où situez-vous:</label>
+          <input type="radio" id="location" name="location" value="ON" checked=checked> Ontario
+          <input type="radio" id="location" name="location" value="QC"> Québéc
+        </p>
+        <p>
+<!--Ceci est crée un radio button pour trouver la mode de livraison-->
+          <label for="livraison">Mode de livraison:</label>
+          <input type="radio" id="livraison" name="livraison" value="normale" checked=checked> Normale (15$; 7+ jours)
+          <input type="radio" id="livraison" name="livraison" value="rapide"> Rapide (40$; 1-5 jours)
+        </p>
+        <p style= text-align: left>
+<!--Prix Total-->
+          <div id=prixTotal style= text-align: left>Prix Total: 0.00$</div>
+        </p>
+<!--Boutton pour finaliser l'achat-->
+        <input type="button" id="finalise" onclick="finalise()" value="Finaliser">
+        <p>
+<!--Pour entrer la somme d'argent donnée pour payer pour les items-->
+          <label for="montantRecu">Entrez le montant donné pour payer:</label>
+          <input type="text" id="montantRecu"> $
+        </p> 
+<!--Div qui affiche la somme d'argent à retourner au client-->
+        <div id=afficheMontantBesoin></div><br>
+<!--Boutton pour payer-->
+        <input type="button" id="pay" onclick="pay()" value="Payer">
+        <div class="float-container">
+          <div class="flex-child">
+ <!--Div pour afficher l'argent à retourner en détails-->
+            <div id=afficheMonaie></div>
+          </div>
+          <div class="flex-child">
+<!--Div pour afficher le reçu-->
+            <div id=recuComplet></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Lien au JavaScript-->
+  <script src="../javascript/fondamentauxFrais.js"></script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ function madlibs() {
   var objet = document.getElementById("txtObjet").value;
   var adjectif2 = document.getElementById("txtAdjectif2").value;
   
-  var madlibs = "J’adore l’été!  Chaque jour, quand je suis en vacances, je me réveille, je mets mes " + vetements + ", je me rend à la cuisine et je mange " + nourriture1 + " pour déjeuner. Ensuite, mon activité préféré est de " + action1 + " avec mon ami " + nom + ".  À 14h, je dîne. Je mange des " + nourriture2 + " " + adjectif1 + ".  Durant l’après-midi, j’aime me rendre au parc et de " + action2 + " " + adverbe + ".  En soirée, je mange toujours " + nourriture3 + " pour le souper. Finalement, je me couche et je rêve de " + objet + ".  Quel été " + adjectif2 + "!";
+  var madlibs = "J’adore l’été!  Chaque jour, quand je suis en vacances, je me réveille, je mets mes " + vetements + ",<br> je me rend à la cuisine et je mange " + nourriture1 + " pour déjeuner. Ensuite, mon activité préféré est de " + action1 + " avec mon ami " + nom + ".<br>  À 14h, je dîne. Je mange des " + nourriture2 + " " + adjectif1 + ".  Durant l’après-midi, j’aime me rendre au parc et de " + action2 + " " + adverbe + ".<br>  En soirée, je mange toujours " + nourriture3 + " pour le souper. Finalement, je me couche et je rêve de " + objet + ".<br>  Quel été " + adjectif2 + "!";
   
   var afficheMadLibs = document.getElementById("divMadLibs");
   afficheMadLibs.innerHTML = madlibs;

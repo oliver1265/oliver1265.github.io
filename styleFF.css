@@ -1,0 +1,60 @@
+html
+/*Rend la page web au centre et change l'arrière-plan à gris*/
+body {
+  text-align: center;
+  background-color: #a6a6a6;
+}
+/*Crée la bordure pour le tableau*/
+table {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 600px;
+  height: 400px
+}
+/*Crée la bordure pour le tableau*/
+td,th {
+  border: 1px solid black;
+}
+/*Rend la couleur du titre de la page rouge-foncé*/
+h1 {
+  width: 100%;
+  height: 100%;
+  color: rgb(100,10,10);
+}
+/*aligne les paragraphs à la gauche*/
+p {
+  text-align: left;
+  margin-left: 75px;
+}
+/*Centralise les colonnes sur la page web*/
+.float-container {
+  border: 3px ;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Taille des images*/
+img {
+  width: 50px;
+  height: 50px;
+}
+/*Rend que les colonnes de la page web sont égaux et utilise 45% de la page chaque*/
+.float-child {
+  width: 45%;
+  float: left;
+  padding: 20px;
+  border: 2px ;
+} 
+/*Rend le montant d'argent à rendre en détails et le reçu à la gache*/
+.flex-child {
+  width: 40%;
+  float: left;
+  padding: 20px;
+  border: 2px ;
+}
+/*Enlève la ligne sous le lien de retour et change la couleur à rouge*/
+a {
+  color: red;
+  text-decoration: none;
